@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Dallas Dsouza</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: #007BFF;
+      margin: 30px auto;
+      animation: moveAndColor 4s infinite alternate;
+      border-radius: 10px;
+    }
+
+    @keyframes moveAndColor {
+      0% {
+        background-color: #007BFF;
+        transform: translateX(0);
+      }
+      50% {
+        background-color: #FF5733;
+        transform: translateX(200px);
+      }
+      100% {
+        background-color: #28A745;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><strong>Dallas Dsouza</strong></h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Contact Information</h2>
+    <p>Name: Dallas Dsouza<br>Email: Dallas.Dsouza26@bishopireton.org<br>Phone: 123-456-7890</p>
+
+    <h3>Contact Form</h3>
+    <form action="mailto:Dallas.Dsouza26@bishopireton.org" method="post" enctype="text/plain">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="subject">Subject:</label><br>
+      <input type="text" id="subject" name="subject" required><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="animated-box"></div>
+  </main>
+
+  <footer>
+    <p>2025 Dallas Dsouza. All rights reserved.</p>
+  </footer>
+</body>
+</html>
